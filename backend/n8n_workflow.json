@@ -1,0 +1,57 @@
+{
+    "name": "ArbiBot Notification Workflow",
+    "nodes": [
+        {
+            "parameters": {
+                "httpMethod": "POST",
+                "path": "arbibot-alert",
+                "options": {}
+            },
+            "name": "Webhook",
+            "type": "n8n-nodes-base.webhook",
+            "typeVersion": 1,
+            "position": [
+                460,
+                300
+            ],
+            "webhookId": "arbibot-alert"
+        },
+        {
+            "parameters": {
+                "content": "## ArbiBot Alert\n**Product:** {{$json[\"name\"]}}\n**Price:** {{$json[\"price\"]}}\n**URL:** {{$json[\"url\"]}}",
+                "height": 266,
+                "width": 296
+            },
+            "name": "Note",
+            "type": "n8n-nodes-base.stickyNote",
+            "typeVersion": 1,
+            "position": [
+                780,
+                240
+            ]
+        },
+        {
+            "parameters": {},
+            "name": "NoOp",
+            "type": "n8n-nodes-base.noOp",
+            "typeVersion": 1,
+            "position": [
+                700,
+                300
+            ]
+        }
+    ],
+    "connections": {
+        "Webhook": {
+            "main": [
+                [
+                    {
+                        "node": "NoOp",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    }
+}
