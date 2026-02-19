@@ -58,8 +58,8 @@
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/tu-usuario/ArbiBot.git
-cd ArbiBot
+git clone https://github.com/Barksaddiction/arbibot-monitor.git
+cd arbibot-monitor
 ```
 
 ### 2. Environment Variables
@@ -120,8 +120,8 @@ ArbiBot is not just a scraper; it is a demonstration of sophisticated workflow a
 
 ## 📬 Contact / Author
 
-- **GitHub:** [tu-usuario](https://github.com/tu-usuario)
-- **LinkedIn:** [Tu Nombre](https://www.linkedin.com/in/tu-perfil/)
+- **GitHub:** [Barksaddiction](https://github.com/Barksaddiction)
+- **LinkedIn:** [Jose Pablo Barquero ](https://www.linkedin.com/in/jose-pablo-barquero-montero-237696262/)
 
 ---
 *If you find this project interesting, feel free to ⭐ the repository or reach out for collaboration!*
